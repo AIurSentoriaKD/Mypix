@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:background="@drawable/eeveew"
+    android:foreground="@drawable/ic_app_bar_main_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/ic_app_bar_main_gradient"
+        android:foreground="@drawable/ic_app_bar_main_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_navbar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/braix_prof"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+
+        <TextView
+            android:id="@+id/profile_name_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="@string/nav_header_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
