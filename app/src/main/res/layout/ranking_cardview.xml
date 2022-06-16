@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/rankingcard_foreground"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/home_ranking_imageview"
+        android:layout_width="410dp"
+        android:layout_height="215dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/braix_prof" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="215dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rankingcard_gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_ranking_artist_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/braix_prof"
+            app:civ_border_color="@color/main_dark_blue"
+            app:civ_border_width="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_ranking_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yae Miko Sample"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/home_ranking_artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="ArtistName Sample"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

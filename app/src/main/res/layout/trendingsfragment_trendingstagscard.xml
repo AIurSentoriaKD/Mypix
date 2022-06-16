@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:foreground="@drawable/trendingfragment_tagcard_foreground"
+    android:layout_height="250dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="10dp">
+
+    <ImageView
+        android:id="@+id/trendingfragment_tagimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/braix_prof" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rankingcard_gradient"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trendingfragment_tagname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="#TextView"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trendingfragment_tagtrad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>

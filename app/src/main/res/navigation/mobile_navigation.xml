@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sylveon.mypixappv1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_rankings"
+            app:destination="@id/nav_rankings"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_userhome"
+            app:destination="@id/nav_userhome"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_trending2"
+            app:destination="@id/nav_trending" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recommended"
+            app:destination="@id/nav_recommended" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_collection"
+            app:destination="@id/nav_collection" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sylveon.mypixappv1.ui.gallery.GalleryFragment"
+        android:label="Mis Artworks"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.sylveon.mypixappv1.ui.slideshow.SlideshowFragment"
+        android:label="Publicar"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_userhome"
+        android:name="com.sylveon.mypixappv1.ui.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_userhome_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_rankings"
+        android:name="com.sylveon.mypixappv1.ui.rankings.RankingsFragment"
+        android:label="Rankings"
+        tools:layout="@layout/fragment_rankings" >
+        <action
+            android:id="@+id/action_nav_rankings_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_trending"
+        android:name="com.sylveon.mypixappv1.ui.trendingtags.TrendingTagsFragment"
+        android:label="Tendencias"
+        tools:layout="@layout/fragment_trending_tags" >
+        <action
+            android:id="@+id/action_nav_trending_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_recommended"
+        android:name="com.sylveon.mypixappv1.ui.recommended.RecommendedFragment"
+        android:label="Recomendados"
+        tools:layout="@layout/fragment_recommended" >
+        <action
+            android:id="@+id/action_nav_recommended_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_collection"
+        android:name="com.sylveon.mypixappv1.ui.collection.CollectionFragment"
+        android:label="Colección"
+        tools:layout="@layout/fragment_collection" >
+        <action
+            android:id="@+id/action_nav_collection_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLogin"
+        android:name="com.sylveon.mypixappv1.ui.authentication.UserLogin"
+        android:label="fragment_user_login"
+        tools:layout="@layout/fragment_user_login" >
+        <action
+            android:id="@+id/action_userLogin_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sylveon.mypixappv1.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_userLogin"
+            app:destination="@id/userLogin" />
+        <action
+            android:id="@+id/action_splashFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.sylveon.mypixappv1.ui.settings.SettingsFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>

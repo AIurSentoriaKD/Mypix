@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_section_home">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_home" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_section_user">
+        <item
+            android:id="@+id/nav_userhome"
+            android:icon="@drawable/user_icon"
+            android:title="@string/userprofile" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/selfartworks" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/add_artwork"
+            android:title="@string/publish" />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav_section_browsing">
+        <item
+            android:id="@+id/nav_rankings"
+            android:icon="@drawable/ranking_icon"
+            android:title="@string/rankings"
+            />
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/trending_tags_icon"
+            android:title="@string/trendingtags"
+            />
+        <item
+            android:id="@+id/nav_recommended"
+            android:icon="@drawable/recommended_icon"
+            android:title="@string/recommended"
+            />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/favorites_icon"
+            android:title="@string/collection"
+            />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav_section_information">
+        <!--<item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_icon"
+            android:title="@string/help"
+            />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/info_icon"
+            android:title="@string/info"
+            />-->
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/settings"
+            />
+    </group>
+
+</menu>
