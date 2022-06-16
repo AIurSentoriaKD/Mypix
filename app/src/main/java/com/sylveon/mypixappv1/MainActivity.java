@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         initSession();
     }
     public void fillDrawerUserInfo(){
-        TextView username = (TextView) findViewById(R.id.profile_name_navbar);
+        TextView username = findViewById(R.id.profile_name_navbar);
         CircleImageView userprofile = (CircleImageView) findViewById(R.id.profile_image_navbar);
         username.setText(user.getUserName());
         Glide.with(this)
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         String url = "http://"+apiUrl+"/auth/login";
         StringRequest stringRequest = new StringRequest(Request.Method.POST,url,
                 response -> {
-                    //Toast.makeText(this,"Exito en request o login?",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this,"Exito en request o login?",Toast.LENGTH_SHORT).show(); lr
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         String username = jsonObject.getString("author_name");
